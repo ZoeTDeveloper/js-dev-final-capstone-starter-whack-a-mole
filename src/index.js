@@ -1,27 +1,30 @@
 const holes = document.querySelectorAll('.hole');
 const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
-// TODO: Add the missing query selectors:
-const score; // Use querySelector() to get the score element
-const timerDisplay; // use querySelector() to get the timer element.
+
+// Adding the missing query selectors:
+const score = document.querySelector('#score');
+const timerDisplay = document.querySelector('#timer')
+
+// Using querySelector() to get the timer element.
 
 let time = 0;
 let timer;
-let lastHole = 0;
+let lastHole = null;
 let points = 0;
 let difficulty = "hard";
 
 /**
- * Generates a random integer within a range.
+ * Generating a random integer within a range.
  *
- * The function takes two values as parameters that limits the range 
+ * The function will take two values as parameters that limits the range 
  * of the number to be generated. For example, calling randomInteger(0,10)
  * will return a random integer between 0 and 10. Calling randomInteger(10,200)
  * will return a random integer between 10 and 200.
  *
  */
 function randomInteger(min, max) {
-  // return Math.floor(Math.random() * (max - min + 1)) + min;
+ return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 /**
