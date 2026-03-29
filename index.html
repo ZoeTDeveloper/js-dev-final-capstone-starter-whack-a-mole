@@ -3,22 +3,30 @@
     <!-- linking external CSS for styling-->
     <link rel="stylesheet" href="./src/styles.css">
   </head>
+
   <body>
     <!-- adding game title-->
     <h1 id="title">Whack-a-Mole</h1>
+
+    <!--game instructions and stats display-->  
     <div>
+
       <div>
         <h2>Click start to play!</h2>
       </div>
+
       <div>
         <h2>score: <span id="score">0</span></h2>
       </div>
+
        <div>
          <h2><span id="timer">0</span> seconds left.</h2>
       </div>
+
       <!-- adding start button to start the game-->
       <button id="start">Start Game</button>
     </div>
+
     <!-- creating grid for the game with holes and moles-->
     <div class="grid">
       <div id="hole0" class="hole">
@@ -49,6 +57,7 @@
         <div id="mole8" class="mole"></div>
       </div>
           </div>
+          
     <!-- linking external JavaScript file for functionality-->      
     <script src="./src/index.js"></script>
   </body>

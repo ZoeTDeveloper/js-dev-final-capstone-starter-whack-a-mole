@@ -1,4 +1,14 @@
-# Whack-a-Mole!
+# Whack-a-Mole! 
+
+Game Overview
+
+The game I developed is a Whack-a-Mole browser based game. The objective is for the player to click on moles as they randomly appear in different holes within a limited time. Each successful click increases the player's score. The game challenges reaction time and provides a simple interactive user experience using HTML, CSS and JavaScript.
+
+
+
+
+
+
 
 A local game development studio has decided to create a new game that's based on Whack-A-Mole. If you've ever been to an arcade, you have probably seen or played Whack-A-Mole. It's a game in which a player uses a mallet to hit toy moles, which appear at random, back into their holes.
 
