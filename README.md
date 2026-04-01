@@ -30,18 +30,18 @@ Algorithms & Logic
   Create grid layout with holes and moles 
   Assign unique IDs for each hole/mole 
   2. CSS Styling 
-    ○ Style grid using Flexbox or Grid 
-    ○ Hide/show moles using classes 
+    - Style grid using Flexbox or Grid 
+    -Hide/show moles using classes 
   3. JavaScript Logic 
-    ○ Store all holes in an array 
-    ○ Randomly select a hole for mole appearance 
-    ○ Use timers to control game duration 
-    ○ Add click event listeners to moles 
+   - Store all holes in an array 
+   - Randomly select a hole for mole appearance 
+   - Use timers to control game duration 
+    - Add click event listeners to moles 
   4. Game Flow 
-    ○ Start button triggers game 
-    ○ Moles appear randomly 
-    ○ Score updates on click 
-    ○ Game ends after set time 
+    - Start button triggers game 
+   - Moles appear randomly 
+   - Score updates on click 
+   - Game ends after set time 
 
 ⚖️ Trade-offs
   • I used simple random selection instead of more complex probability logic to keep the game lightweight 
@@ -50,21 +50,21 @@ Algorithms & Logic
 
 🧩 Challenges & Debugging
   • Issue: Moles not appearing correctly 
-    ○ Fix: Ensured correct DOM selection and class toggling 
+    - Fix: Ensured correct DOM selection and class toggling 
   • Issue: Click events not registering 
-    ○ Fix: Verified event listeners were attached after DOM load 
+    -Fix: Verified event listeners were attached after DOM load 
   • Issue: Multiple moles showing at once 
-    ○ Fix: Reset active mole before showing a new one 
+    - Fix: Reset active mole before showing a new one 
   • Issue: Game timing inconsistencies 
-    ○ Fix: Standardized timing logic using setInterval 
+   - Fix: Standardized timing logic using setInterval 
 
 AI Tools Used
   • ChatGPT 
-    ○ Assisted with debugging JavaScript errors 
-    ○ Helped structure functions and logic 
-    ○ Provided explanations for concepts like event listeners and timers 
+    - Assisted with debugging JavaScript errors 
+    - Helped structure functions and logic 
+   - Provided explanations for concepts like event listeners and timers 
   • GitHub Copilot 
-    ○ Suggested code snippets for faster development 
+    - Suggested code snippets for faster development 
     
 Justification:
 AI tools helped improve efficiency, debug issues faster, and better understand JavaScript concepts while still allowing me to write and understand the core logic independently.
