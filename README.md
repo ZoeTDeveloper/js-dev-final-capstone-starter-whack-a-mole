@@ -5,7 +5,72 @@ Game Overview
 The game I developed is a Whack-a-Mole browser based game. The objective is for the player to click on moles as they randomly appear in different holes within a limited time. Each successful click increases the player's score. The game challenges reaction time and provides a simple interactive user experience using HTML, CSS and JavaScript.
 
 
+Project Plan
+Functions
+  • startGame() - initializes game state and timer 
+  • randomMole() - selects a random mole to appear 
+  • showMole() - displays mole in a hole 
+  • hideMole() - removes mole after a set time 
+  • handleWhack() - increases score when mole is clicked 
+  • updateScore() - updates score display 
+  • endGame() - stops the game and displays final score 
+Features
+  • Dynamic mole appearance 
+  • Score tracking 
+  • Countdown timer 
+  • Click interaction 
+  • Responsive grid layout 
+Algorithms & Logic
+  • Random index selection for mole placement 
+  • Timer-based intervals using setTimeout / setInterval 
+  • Event listeners for user clicks 
+  • State management (score, time remaining, active mole) 
+ Implementation Plan
+  1. HTML Structure 
+  Create grid layout with holes and moles 
+  Assign unique IDs for each hole/mole 
+  2. CSS Styling 
+    ○ Style grid using Flexbox or Grid 
+    ○ Hide/show moles using classes 
+  3. JavaScript Logic 
+    ○ Store all holes in an array 
+    ○ Randomly select a hole for mole appearance 
+    ○ Use timers to control game duration 
+    ○ Add click event listeners to moles 
+  4. Game Flow 
+    ○ Start button triggers game 
+    ○ Moles appear randomly 
+    ○ Score updates on click 
+    ○ Game ends after set time 
 
+⚖️ Trade-offs
+  • I used simple random selection instead of more complex probability logic to keep the game lightweight 
+  • I chose setTimeout instead of advanced animation libraries for simplicity and performance 
+  • Kept UI minimal to focus on core functionality rather than heavy styling 
+
+🧩 Challenges & Debugging
+  • Issue: Moles not appearing correctly 
+    ○ Fix: Ensured correct DOM selection and class toggling 
+  • Issue: Click events not registering 
+    ○ Fix: Verified event listeners were attached after DOM load 
+  • Issue: Multiple moles showing at once 
+    ○ Fix: Reset active mole before showing a new one 
+  • Issue: Game timing inconsistencies 
+    ○ Fix: Standardized timing logic using setInterval 
+
+AI Tools Used
+  • ChatGPT 
+    ○ Assisted with debugging JavaScript errors 
+    ○ Helped structure functions and logic 
+    ○ Provided explanations for concepts like event listeners and timers 
+  • GitHub Copilot 
+    ○ Suggested code snippets for faster development 
+    
+Justification:
+AI tools helped improve efficiency, debug issues faster, and better understand JavaScript concepts while still allowing me to write and understand the core logic independently.
+
+Project Summary
+This project involved building a fully functional Whack-a-Mole game using HTML, CSS, and JavaScript. I focused on implementing core game logic such as random mole generation, user interaction, score tracking, and timed gameplay. Throughout the process, I practiced DOM manipulation, event handling, and working with timers like setTimeout and setInterval. One of the main challenges was ensuring that only one mole appeared at a time and that click events were properly registered. I also had to debug issues related to timing and DOM updates. Overall, this project strengthened my understanding of JavaScript fundamentals and improved my ability to troubleshoot and structure interactive web applications.
 
 
 
