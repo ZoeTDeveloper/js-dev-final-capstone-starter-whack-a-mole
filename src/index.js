@@ -32,6 +32,8 @@ function setDelay(difficulty) {
   } else if (difficulty === "hard") {
     return randomInteger(600, 1200);
   }
+  // Fallback to normal if an unexpected value is passed
+  return 1000;
 }
 /**
  * Chooses a random hole from a list of holes.
